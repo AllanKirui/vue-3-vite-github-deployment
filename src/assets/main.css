@@ -123,3 +123,8 @@ p.foot-note {
 .foot-note p:not(:first-child) {
   margin-top: 1rem;
 }
+
+footer {
+  text-align: right;
+  margin-top: 1.5rem;
+}
