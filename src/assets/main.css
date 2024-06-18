@@ -1,15 +1,125 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover);
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
 a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--color-links);
   transition: 0.4s;
   padding: 3px;
+  position: relative;
+}
+
+a.router-link-exact-active::after {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  content: "";
+  width: 60%;
+  height: 5px;
+  border-radius: 6px;
+  background-color: var(--color-links);
+}
+
+nav a:nth-child(2) {
+  margin-left: .8rem;
+}
+
+pre {
+  background: var(--color-background-soft);
+  margin-top: 0.5rem;
+  padding: 10px;
+  padding-right: 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow-x: auto;
+}
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px 10px;
+  background: var(--color-button-bg);
+  color: var(--color-button-text);
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--color-button-bg-hover);
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+.title,
+.table-of-contents,
+.about {
+  margin-top: 1rem;
+}
+
+
+.table-of-contents a {
+  display: block;
+}
+
+.guide-1,
+.guide-2 {
+  margin-top: 3rem;
+}
+
+.guide-title {
+  color: #f39639;
+}
+
+.step,
+.foot-note {
+  margin-top: 1.5rem;
+}
+
+p.foot-note {
+  margin-top: 2rem;
+  color: #f39639;
+  text-align: center;
+}
+
+.about p:not(:first-child),
+.step p:not(:first-child),
+.foot-note p:not(:first-child) {
+  margin-top: 1rem;
 }
