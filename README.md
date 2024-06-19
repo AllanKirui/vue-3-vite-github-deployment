@@ -1,35 +1,18 @@
-# vue-3-vite-github-deployment
+# From Frustration to Success: Vue 3 Vite GitHub Deployment
 
-This template should help get you started developing with Vue 3 in Vite.
+After struggling to deploy my Vue 3 Vite project to GitHub Pages, I created a small app to figure it out. Here's a streamlined guide for setting up a Vue 3 Vite app with dynamic routing and deploying it to GitHub.
 
-## Recommended IDE Setup
+If you are feeling frustrated like I was, this guide is here to help. I hope it makes the process easier for you.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+<br>
 
-## Customize configuration
+## Author ✍🏾
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Website - [Allan Kirui](https://allankirui.github.io)
+- Email - <allan.kirui@outlook.com>
 
-## Project Setup
+Thank you for reading the guide. If you find any bugs or undocumented features, please let me know 😉
 
-```sh
-npm install
-```
+<br>
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Coding is Your Superpower ✌
