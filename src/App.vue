@@ -1,9 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
+
+const route = useRoute()
 </script>
 
 <template>
-  <header>
+  <header id="header">
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
@@ -11,4 +13,8 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <RouterView />
+
+  <footer v-if="route.name === 'home'">
+    <a href="#header">Back to top</a>
+  </footer>
 </template>
