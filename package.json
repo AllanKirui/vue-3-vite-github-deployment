@@ -12,6 +12,11 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
+  "author": {
+    "name": "Allan Kirui",
+    "email": "allan.kirui@outlook.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
