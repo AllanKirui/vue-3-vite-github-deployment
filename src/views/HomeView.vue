@@ -1,5 +1,8 @@
 <script setup>
-const copyCode = (codeId) => {
+const copyCode = (codeId, event) => {
+  const copyBtn = event.target
+  copyBtn.blur()
+
   if (!navigator) {
     alert('Please copy code manually.')
     return
@@ -56,7 +59,7 @@ const copyCode = (codeId) => {
   npm create vue@latest
   </code>
 </pre>
-          <button @click="copyCode('code1')">Copy Code</button>
+          <button @click="($event) => copyCode('code1', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -70,7 +73,7 @@ const copyCode = (codeId) => {
    npm install vue-router
    </code>
 </pre>
-          <button @click="copyCode('code2')">Copy Code</button>
+          <button @click="($event) => copyCode('code2', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -88,7 +91,7 @@ const copyCode = (codeId) => {
    touch src/router/index.js
    </code>
 </pre>
-          <button @click="copyCode('code3')">Copy Code</button>
+          <button @click="($event) => copyCode('code3', $event)">Copy Code</button>
         </div>
 
         <p>In <code>src/router/index.js</code>, set up your routes:</p>
@@ -112,7 +115,7 @@ const copyCode = (codeId) => {
    export default router;
    </code>
 </pre>
-          <button @click="copyCode('code4')">Copy Code</button>
+          <button @click="($event) => copyCode('code4', $event)">Copy Code</button>
         </div>
 
         <p>Create the <code>views</code> directory and add your components:</p>
@@ -123,7 +126,7 @@ const copyCode = (codeId) => {
   touch src/views/Home.vue src/views/About.vue
   </code>
 </pre>
-          <button @click="copyCode('code5')">Copy Code</button>
+          <button @click="($event) => copyCode('code5', $event)">Copy Code</button>
         </div>
 
         <p>Example <code>Home.vue</code>:</p>
@@ -137,7 +140,7 @@ const copyCode = (codeId) => {
   &lt;/template&gt;
   </code>
 </pre>
-          <button @click="copyCode('code6')">Copy Code</button>
+          <button @click="($event) => copyCode('code6', $event)">Copy Code</button>
         </div>
 
         <p>Example <code>About.vue</code>:</p>
@@ -151,7 +154,7 @@ const copyCode = (codeId) => {
   &lt;/template&gt;
   </code>
 </pre>
-          <button @click="copyCode('code7')">Copy Code</button>
+          <button @click="($event) => copyCode('code7', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -173,7 +176,7 @@ const copyCode = (codeId) => {
   app.mount('#app');
   </code>
 </pre>
-          <button @click="copyCode('code8')">Copy Code</button>
+          <button @click="($event) => copyCode('code8', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -195,7 +198,7 @@ const copyCode = (codeId) => {
   &lt;/template&gt;
   </code>
 </pre>
-          <button @click="copyCode('code9')">Copy Code</button>
+          <button @click="($event) => copyCode('code9', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -208,7 +211,7 @@ const copyCode = (codeId) => {
   npm run dev
   </code>
 </pre>
-          <button @click="copyCode('code10')">Copy Code</button>
+          <button @click="($event) => copyCode('code10', $event)">Copy Code</button>
           <p>Open the provided local server address in your browser to see your app in action.</p>
         </div>
       </div>
@@ -236,7 +239,7 @@ const copyCode = (codeId) => {
   });
   </code>
 </pre>
-          <button @click="copyCode('code11')">Copy Code</button>
+          <button @click="($event) => copyCode('code11', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -250,7 +253,7 @@ const copyCode = (codeId) => {
   npm install gh-pages --save-dev
   </code>
 </pre>
-          <button @click="copyCode('code12')">Copy Code</button>
+          <button @click="($event) => copyCode('code12', $event)">Copy Code</button>
         </div>
 
         <p>Add deploy scripts to your <code>package.json</code>:</p>
@@ -264,7 +267,7 @@ const copyCode = (codeId) => {
   }
   </code>
 </pre>
-          <button @click="copyCode('code13')">Copy Code</button>
+          <button @click="($event) => copyCode('code13', $event)">Copy Code</button>
         </div>
 
         <p>Commit your changes:</p>
@@ -276,7 +279,7 @@ const copyCode = (codeId) => {
   git push
   </code>
 </pre>
-          <button @click="copyCode('code14')">Copy Code</button>
+          <button @click="($event) => copyCode('code14', $event)">Copy Code</button>
         </div>
 
         <p>Deploy your app:</p>
@@ -286,7 +289,7 @@ const copyCode = (codeId) => {
   npm run deploy
   </code>
 </pre>
-          <button @click="copyCode('code15')">Copy Code</button>
+          <button @click="($event) => copyCode('code15', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -322,7 +325,7 @@ const copyCode = (codeId) => {
   npm run dev
   </code>
 </pre>
-          <button @click="copyCode('code16')">Copy Code</button>
+          <button @click="($event) => copyCode('code16', $event)">Copy Code</button>
           <p>
             Open the provided local server address in your browser to see your updated app in
             action.
@@ -341,7 +344,7 @@ const copyCode = (codeId) => {
   git commit -m "Describe your changes"
   </code>
 </pre>
-          <button @click="copyCode('code17')">Copy Code</button>
+          <button @click="($event) => copyCode('code17', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -355,7 +358,7 @@ const copyCode = (codeId) => {
   git push
   </code>
 </pre>
-          <button @click="copyCode('code18')">Copy Code</button>
+          <button @click="($event) => copyCode('code18', $event)">Copy Code</button>
         </div>
       </div>
 
@@ -369,7 +372,7 @@ const copyCode = (codeId) => {
   npm run deploy
   </code>
 </pre>
-          <button @click="copyCode('code19')">Copy Code</button>
+          <button @click="($event) => copyCode('code19', $event)">Copy Code</button>
         </div>
       </div>
 
