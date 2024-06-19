@@ -12,7 +12,11 @@ const route = useRoute()
     </nav>
   </header>
 
-  <RouterView />
+  <RouterView v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </RouterView>
 
   <footer v-if="route.name === 'home'">
     <a href="#header">Back to top</a>
