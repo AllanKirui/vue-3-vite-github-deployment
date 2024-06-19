@@ -1,3 +1,24 @@
+<script setup>
+const copyCode = (codeId) => {
+  if (!navigator) {
+    alert('Please copy code manually.')
+    return
+  }
+
+  const codeElement = document.getElementById(codeId)
+  const codeText = codeElement.textContent
+
+  navigator.clipboard
+    .writeText(codeText)
+    .then(() => {
+      alert('Code copied to clipboard!')
+    })
+    .catch((err) => {
+      console.error('Could not copy text: ', err)
+    })
+}
+</script>
+
 <template>
   <main>
     <h1 class="title">Vue 3 Vite GitHub Deployment</h1>
