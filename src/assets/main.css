@@ -114,8 +114,10 @@ button {
   transition: 0.2s;
 }
 
-button:hover {
-  background: var(--color-button-bg-hover);
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    background: var(--color-button-bg-hover);
+  }
 }
 
 h1,
