@@ -40,6 +40,11 @@ const copyCode = (codeId, event) => {
             Updating Your Deployed Vue 3 Vite App on GitHub Pages After Making Changes
           </a>
         </li>
+        <li>
+          <a href="#fixing-404-error">
+            Fixing the 404 Error Displayed by GitHub Pages When Reloading or Entering Direct URLs
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -399,6 +404,100 @@ const copyCode = (codeId, event) => {
         <p>
           By following these steps, you ensure that your updated project is correctly deployed to
           GitHub Pages.
+        </p>
+      </div>
+    </section>
+
+    <!-- Fixing 404 Errors -->
+    <section id="fixing-404-error" class="guide-3">
+      <h2 class="guide-title">
+        Fixing the 404 Error Displayed by GitHub Pages When Reloading or Entering Direct URLs
+      </h2>
+
+      <!-- Step 1 -->
+      <div class="step">
+        <h3>1. Build your app</h3>
+        <p>
+          After completing your development work, build your Vue 3 Vite app to generate the
+          production-ready files.
+        </p>
+        <div class="pre-wrapper">
+          <pre>
+  <code id="code20">
+  npm run build
+  </code>
+</pre>
+          <button @click="($event) => copyCode('code20', $event)">Copy Code</button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step">
+        <h3>2. Copy 'index.html' to '404.html'</h3>
+        <p>
+          Copy the contents of the 'index.html' file generated in the 'dist' folder into a new
+          '404.html' file.
+        </p>
+        <div class="pre-wrapper">
+          <pre>
+  <code id="code21">
+  cp dist/index.html public/404.html
+  </code>
+</pre>
+          <button @click="($event) => copyCode('code21', $event)">Copy Code</button>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step">
+        <h3>3. Deploy your app</h3>
+        <p>Deploy your app to GitHub Pages as usual.</p>
+        <div class="pre-wrapper">
+          <pre>
+  <code id="code22">
+  npm run deploy
+  </code>
+</pre>
+          <button @click="($event) => copyCode('code22', $event)">Copy Code</button>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step">
+        <h3>4. Update '404.html' when making changes</h3>
+        <p>
+          Whenever you make changes to your code and rebuild the app, update the '404.html' file
+          with the new content from 'dist/index.html'
+        </p>
+        <div class="pre-wrapper">
+          <pre>
+  <code id="code23">
+  cp dist/index.html public/404.html
+  </code>
+</pre>
+          <button @click="($event) => copyCode('code23', $event)">Copy Code</button>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step">
+        <h3>5. Redeploy your updated app</h3>
+        <p>After updating the '404.html' file, redeploy your app to GitHub pages.</p>
+        <div class="pre-wrapper">
+          <pre>
+  <code id="code24">
+  npm run deploy
+  </code>
+</pre>
+          <button @click="($event) => copyCode('code24', $event)">Copy Code</button>
+        </div>
+      </div>
+
+      <!-- Foot Note -->
+      <div class="foot-note">
+        <p>
+          Following these steps ensures that your Vue 3 Vite app deployed on GitHub Pages will
+          handle reloads and direct URL access correctly without displaying 404 error pages.
         </p>
       </div>
     </section>
