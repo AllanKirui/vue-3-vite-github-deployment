@@ -446,6 +446,10 @@ const copyCode = (codeId, event) => {
 </pre>
           <button @click="($event) => copyCode('code21', $event)">Copy Code</button>
         </div>
+        <p>
+          Remember to <code>commit</code> and <code>push</code> the change made to the '404.html'
+          file.
+        </p>
       </div>
 
       <!-- Step 3 -->
@@ -477,6 +481,10 @@ const copyCode = (codeId, event) => {
 </pre>
           <button @click="($event) => copyCode('code23', $event)">Copy Code</button>
         </div>
+        <p>
+          Remember to <code>commit</code> and <code>push</code> the change made to the '404.html'
+          file.
+        </p>
       </div>
 
       <!-- Step 5 -->
