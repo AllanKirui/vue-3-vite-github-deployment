@@ -61,7 +61,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code1">
-  npm create vue@latest
+  <span class="terminal-command">npm create <span class="package">vue@latest</span></span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code1', $event)">Copy Code</button>
@@ -75,7 +75,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
    <code id="code2">
-   npm install vue-router
+   <span class="terminal-command">npm install <span class="package">vue-router</span></span>
    </code>
 </pre>
           <button @click="($event) => copyCode('code2', $event)">Copy Code</button>
@@ -92,8 +92,8 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
    <code id="code3">
-   mkdir src/router
-   touch src/router/index.js
+   <span class="terminal-command">mkdir</span> <span class="flag">src/router</span>
+   <span class="terminal-command">touch</span> <span class="flag">src/router/index.js</span>
    </code>
 </pre>
           <button @click="($event) => copyCode('code3', $event)">Copy Code</button>
@@ -103,21 +103,21 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
    <code id="code4">
-   import { createRouter, createWebHistory } from 'vue-router';
-   import Home from '../views/Home.vue';
-   import About from '../views/About.vue';
+   <span class="keyword">import</span> <span class="method"></span><span class="method">{ createRouter, createWebHistory }</span> <span class="keyword">from</span> <span class="string">'<span class="package">vue-router</span>'</span>;
+   <span class="keyword">import</span> <span class="method">Home</span> <span class="keyword">from</span> <span class="string">'../views/Home.vue'</span>;
+   <span class="keyword">import</span> <span class="method">About</span> <span class="keyword">from</span> <span class="string">'../views/About.vue'</span>;
    
-   const routes = [
-     { path: '/', component: Home },
-     { path: '/about', component: About },
+   <span class="keyword">const</span> routes = [
+     { <span class="keyword">path</span>: <span class="string">'/'</span>, <span class="keyword">component</span>: Home },
+     { <span class="keyword">path</span>: <span class="string">'/about'</span>, <span class="keyword">component</span>: About },
    ];
    
-   const router = createRouter({
-     history: createWebHistory(import.meta.env.BASE_URL),
-     routes,
+   <span class="keyword">const</span> router = createRouter({
+     <span class="keyword">history</span>: createWebHistory(<span class="keyword">import</span>.meta.env.BASE_URL),
+     <span class="keyword">routes</span>,
    });
    
-   export default router;
+   <span class="keyword">export</span> <span class="package">default</span> router;
    </code>
 </pre>
           <button @click="($event) => copyCode('code4', $event)">Copy Code</button>
@@ -127,8 +127,8 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code5">
-  mkdir src/views
-  touch src/views/Home.vue src/views/About.vue
+  <span class="terminal-command">mkdir</span> <span class="flag">src/views</span>
+  <span class="terminal-command">touch</span> <span class="flag">src/views/Home.vue src/views/About.vue</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code5', $event)">Copy Code</button>
@@ -138,11 +138,11 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code6">
-  &lt;template&gt;
-    &lt;div&gt;
-      &lt;h1&gt;Home&lt;/h1&gt;
-    &lt;/div&gt;
-  &lt;/template&gt;
+  <span class="html-tag">&lt;template&gt;</span>
+    <span class="html-tag">&lt;div&gt;</span>
+      <span class="html-tag">&lt;h1&gt;</span>Home<span class="html-tag">&lt;/h1&gt;</span>
+    <span class="html-tag">&lt;/div&gt;</span>
+  <span class="html-tag">&lt;/template&gt;</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code6', $event)">Copy Code</button>
@@ -152,11 +152,11 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code7">
-  &lt;template&gt;
-    &lt;div&gt;
-      &lt;h1&gt;About&lt;/h1&gt;
-    &lt;/div&gt;
-  &lt;/template&gt;
+  <span class="html-tag">&lt;template&gt;</span>
+    <span class="html-tag">&lt;div&gt;</span>
+      <span class="html-tag">&lt;h1&gt;</span>About<span class="html-tag">&lt;/h1&gt;</span>
+    <span class="html-tag">&lt;/div&gt;</span>
+  <span class="html-tag">&lt;/template&gt;</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code7', $event)">Copy Code</button>
@@ -170,15 +170,15 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code8">
-  import { createApp } from 'vue';
-  import App from './App.vue';
-  import router from './router';
+  <span class="keyword">import</span> <span class="method">{ createApp }</span> <span class="keyword">from</span> <span class="string">'<span class="package">vue</span>'</span>;
+  <span class="keyword">import</span> <span class="method">App</span> <span class="keyword">from</span> <span class="string">'./App.vue'</span>;
+  <span class="keyword">import</span> <span class="method">router</span> <span class="keyword">from</span> <span class="string">'./router'</span>;
 
-  const app = createApp(App);
+  <span class="keyword">const</span> app = createApp(App);
 
   app.use(router);
 
-  app.mount('#app');
+  app.mount(<span class="string">'#app'</span>);
   </code>
 </pre>
           <button @click="($event) => copyCode('code8', $event)">Copy Code</button>
@@ -191,16 +191,16 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code9">
-  &lt;template&gt;
-    &lt;header&gt;
-      &lt;nav&gt;
-        &lt;router-link to="/"&gt;Home&lt;/router-link&gt;
-        &lt;router-link to="/about"&gt;About&lt;/router-link&gt;
-      &lt;/nav&gt;
-    &lt;/header&gt;
+  <span class="html-tag">&lt;template&gt;</span>
+    <span class="html-tag">&lt;header&gt;</span>
+      <span class="html-tag">&lt;nav&gt;</span>
+        <span class="html-tag">&lt;router-link</span> <span class="property">to</span>=<span class="string">"/"</span><span class="html-tag">&gt;</span>Home <span class="html-tag">&lt;/router-link&gt;</span>
+        <span class="html-tag">&lt;router-link</span> <span class="property">to</span>=<span class="string">"/about"</span><span class="html-tag">&gt;</span>About <span class="html-tag">&lt;/router-link&gt;</span>
+      <span class="html-tag">&lt;/nav&gt;</span>
+    <span class="html-tag">&lt;/header&gt;</span>
 
-    &lt;router-view /&gt;
-  &lt;/template&gt;
+    <span class="html-tag">&lt;router-view /&gt;</span>
+  <span class="html-tag">&lt;/template&gt;</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code9', $event)">Copy Code</button>
@@ -213,7 +213,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code10">
-  npm run dev
+  <span class="terminal-command">npm run dev</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code10', $event)">Copy Code</button>
@@ -235,12 +235,12 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code11">
-  import { defineConfig } from 'vite';
-  import vue from '@vitejs/plugin-vue';
+  <span class="keyword">import</span> <span class="method">{ defineConfig }</span> <span class="keyword">from</span> <span class="string">'<span class="package">vite</span>'</span>;
+  <span class="keyword">import</span> <span class="method">vue</span> <span class="keyword">from</span> <span class="string">'<span class="package">@vitejs/plugin-vue'</span></span>;
 
-  export default defineConfig({
-    base: '/REPOSITORY/',
-    plugins: [vue()],
+  <span class="keyword">export</span> <span class="package">default</span> defineConfig({
+    <span class="keyword">base</span>: <span class="string">'/REPOSITORY/'</span>,
+    <span class="keyword">plugins</span>: [<span class="method">vue()</span>],
   });
   </code>
 </pre>
@@ -255,7 +255,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code12">
-  npm install gh-pages --save-dev
+  <span class="terminal-command">npm install <span class="package">gh-pages</span> <span class="flag">--save-dev</span></span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code12', $event)">Copy Code</button>
@@ -265,10 +265,10 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code13">
-  "scripts": {
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+  <span class="string">"scripts"</span>: {
+    <span class="string">"build"</span>: <span class="string">"vite build"</span>,
+    <span class="string">"predeploy"</span>: <span class="string">"npm run build"</span>,
+    <span class="string">"deploy"</span>: <span class="string">"gh-pages -d dist</span>"
   }
   </code>
 </pre>
@@ -279,9 +279,9 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code14">
-  git add .
-  git commit -m "Set up Vue 3 Vite app with dynamic routing and deploy to GitHub"
-  git push
+  <span class="git-command">git add .</span>
+  <span class="git-command">git commit</span> <span class="flag">-m</span> <span class="string">"Set up Vue 3 Vite app with dynamic routing and deploy to GitHub"</span>
+  <span class="git-command">git push</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code14', $event)">Copy Code</button>
@@ -291,7 +291,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code15">
-  npm run deploy
+  <span class="terminal-command">npm run deploy</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code15', $event)">Copy Code</button>
@@ -327,7 +327,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code16">
-  npm run dev
+  <span class="terminal-command">npm run dev</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code16', $event)">Copy Code</button>
@@ -345,8 +345,8 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code17">
-  git add .
-  git commit -m "Describe your changes"
+  <span class="git-command">git add .</span>
+  <span class="git-command">git commit</span> <span class="flag">-m</span> <span class="string">"Describe your changes"</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code17', $event)">Copy Code</button>
@@ -360,7 +360,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code18">
-  git push
+  <span class="git-command">git push</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code18', $event)">Copy Code</button>
@@ -374,7 +374,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code19">
-  npm run deploy
+  <span class="terminal-command">npm run deploy</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code19', $event)">Copy Code</button>
@@ -424,7 +424,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code20">
-  npm run build
+  <span class="terminal-command">npm run build</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code20', $event)">Copy Code</button>
@@ -441,7 +441,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code21">
-  cp dist/index.html public/404.html
+  <span class="terminal-command">cp</span> <span class="flag">dist/index.html public/404.html</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code21', $event)">Copy Code</button>
@@ -455,7 +455,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code22">
-  npm run deploy
+  <span class="terminal-command">npm run deploy</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code22', $event)">Copy Code</button>
@@ -472,7 +472,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code23">
-  cp dist/index.html public/404.html
+  <span class="terminal-command">cp</span> <span class="flag">dist/index.html public/404.html</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code23', $event)">Copy Code</button>
@@ -486,7 +486,7 @@ const copyCode = (codeId, event) => {
         <div class="pre-wrapper">
           <pre>
   <code id="code24">
-  npm run deploy
+  <span class="terminal-command">npm run deploy</span>
   </code>
 </pre>
           <button @click="($event) => copyCode('code24', $event)">Copy Code</button>
