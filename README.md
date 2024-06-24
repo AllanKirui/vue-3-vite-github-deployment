@@ -10,11 +10,15 @@ If you are feeling frustrated like I was, this guide is here to help. I hope it 
 
 ### Author ✍🏾
 
-- Website - [Allan Kirui](https://allankirui.github.io)
-- Email - <allan.kirui@outlook.com>
+Thank you for taking the time to read the guide.
 
-Thank you for reading the guide. If you find any bugs or undocumented features, please let me know 😉
+I'd love to hear from you! Feel free to shoot me an email to say hi. Your feedback and thoughts are always welcome.
 
----
+Also, if you encounter any _undocumented features_, please let me know 😉
 
-Coding is Your Superpower ✌
+Website 🌍 - [Allan Kirui](https://allankirui.github.io)
+<br>Email 📧 - <allan.kirui@outlook.com>
+
+<br>
+
+**Coding is Your Superpower** ✌
