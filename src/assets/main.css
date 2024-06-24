@@ -12,6 +12,12 @@
   height: 12px;
 }
 
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    height: 6px;
+  }
+}
+
 ::-webkit-scrollbar-track {
   background: var(--color-scrollbar-track);
 }
@@ -97,7 +103,6 @@ pre code .flag {
 pre code .terminal-command,
 pre code .git-command {
   color: #ff4500;
-  /* TODO check contrast, with current and suggested background */
 }
 
 button {
@@ -122,6 +127,10 @@ button {
 
 h1,
 h2 {
+  font-weight: 600;
+}
+
+h3 {
   font-weight: 500;
 }
 
@@ -140,7 +149,7 @@ h2 {
 .guide-3 {
   margin-top: 3rem;
 }
-
+.title,
 .guide-title {
   color: #ffd700;
 }
@@ -152,7 +161,7 @@ h2 {
 
 p.foot-note {
   margin-top: 2rem;
-  color: #f39639;
+  color: #ffd700;
   text-align: center;
 }
 
