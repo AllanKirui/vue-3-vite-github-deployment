@@ -69,6 +69,37 @@ pre {
   overflow-x: auto;
 }
 
+pre code .keyword {
+  color: #ff6347;
+}
+
+pre code .string {
+  color: #ffa07a;
+}
+
+pre code .html-tag {
+  color: #87cefa;
+}
+
+pre code .package,
+pre code .property {
+  color: #ffd700;
+}
+
+pre code .method {
+  color: #adff2f;
+}
+
+pre code .flag {
+  color: #aaa;
+}
+
+pre code .terminal-command,
+pre code .git-command {
+  color: #ff4500;
+  /* TODO check contrast, with current and suggested background */
+}
+
 button {
   position: absolute;
   right: 10px;
@@ -109,7 +140,7 @@ h2 {
 }
 
 .guide-title {
-  color: #f39639;
+  color: #ffd700;
 }
 
 .step,

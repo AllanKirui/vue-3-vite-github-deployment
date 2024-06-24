@@ -1,6 +1,6 @@
 :root {
   --color-background: #181818;
-  --color-background-soft: #222222;
+  --color-background-soft: #1e1e1e;
 
   --color-text: #c8c8a0;
   --color-links: #f39639;
@@ -9,8 +9,8 @@
   --color-scrollbar-thumb: #f39639;
   --color-scrollbar-thumb-hover: #f8c088;
 
-  --color-button-bg: #f39639;
-  --color-button-bg-hover: #f8c088;
+  --color-button-bg: #ffd700;
+  --color-button-bg-hover: #f39639;
   --color-button-text: #000000;
 }
 
